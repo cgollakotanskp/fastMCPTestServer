@@ -8,6 +8,3 @@ dependencies = [
     "fastmcp>=2.13.0.1",
     "mcp[cli]>=1.19.0",
 ]
-  
-[tool.uv.sources]
-mcp = { git = "https://github.com/modelcontextprotocol/python-sdk.git" }
