@@ -10,7 +10,7 @@ from mcp.types import SamplingMessage, TextContent
 mcp = FastMCP("Echo Server")
 
 
-@mcp.tool
+@mcp.tool()
 def echo_tool(text: str) -> str:
     """Echo the input text"""
     return text
@@ -32,7 +32,7 @@ def echo_prompt(text: str) -> str:
     return text
 
 
-@mcp.tool
+@mcp.tool()
 async def generate_poem(topic: str, ctx: Context[ServerSession, None]) -> str:
     """Generate a poem using LLM sampling."""
     prompt = f"Write a short poem about {topic}"
