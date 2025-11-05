@@ -10,7 +10,7 @@ from mcp.types import SamplingMessage, TextContent
 mcp = FastMCP("Echo Server")
 
 
-@mcp.tool
+@mcp.tool()
 def echo_tool(text: str) -> str:
     """Echo the input text"""
     return text
